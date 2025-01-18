@@ -1,0 +1,65 @@
+body {
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(57, 1, 57);
+    color: #fff;
+}
+#menu {
+    display: none;
+}
+
+h1 {
+    align-self: center;
+    margin-left: 1rem;
+}
+nav {
+    align-content: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 5rem;
+    justify-content: flex-end;
+    margin-right: 3rem;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: aqua;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h2 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.block {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.temples {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.temples figure img {
+    max-width: 100%;
+    width: 250px;
+    height: 150px;
+}
+
+footer {
+    background-color: rgb(57, 1, 57);
+    color: #fff;
+    justify-items: center;
+}
