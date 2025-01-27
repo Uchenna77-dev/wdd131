@@ -184,6 +184,7 @@ img {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-left: 2rem;
         align-content: center;
         margin-bottom: 4rem;
         margin-top: 1rem;
