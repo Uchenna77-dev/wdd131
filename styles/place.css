@@ -68,6 +68,13 @@ img {
     max-height: 50px;
 }
 
+#wea h2::after {
+    content: url('images/weather_icon.svg');
+    display: inline-block;
+    margin-left: 10px;
+    width: 16px;
+    height: 16px;
+}
 
 .wea img {
     width: 40px;
@@ -165,6 +172,7 @@ img {
 
     #dat h2, #wea h2 {
         text-align: center;
+        justify-self: center;
     }
 
     img {
@@ -175,9 +183,13 @@ img {
     #wea {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 4rem;
+        margin-top: 1rem;
     }
 
-    .wea img {
+    #wea img {
         width: 100px;
         height: auto;
         justify-self: center;
