@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineering Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Welcome to Software Engineering Hub</h1>
+        <p>Your go-to resource for software development, best practices, and projects.</p>
+        <a href="blog.html" class="btn">Explore Blog</a>
+    </section>
+    
+    <section class="topics">
+        <h2>Popular Topics</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Software Development</h3>
+                <p>Learn the fundamentals of modern software engineering.</p>
+            </div>
+            <div class="card">
+                <h3>AI & Machine Learning</h3>
+                <p>Explore the latest in artificial intelligence.</p>
+            </div>
+            <div class="card">
+                <h3>Cybersecurity</h3>
+                <p>Understand how to secure applications and data.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Software Engineering Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineering Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Welcome to Software Engineering Hub</h1>
+        <p>Your go-to resource for software development, best practices, and projects.</p>
+        <a href="blog.html" class="btn">Explore Blog</a>
+    </section>
+    
+    <section class="topics">
+        <h2>Popular Topics</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Software Development</h3>
+                <p>Learn the fundamentals of modern software engineering.</p>
+            </div>
+            <div class="card">
+                <h3>AI & Machine Learning</h3>
+                <p>Explore the latest in artificial intelligence.</p>
+            </div>
+            <div class="card">
+                <h3>Cybersecurity</h3>
+                <p>Understand how to secure applications and data.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="blog">
+        <h2>Latest Blog Posts</h2>
+        <ul>
+            <li><a href="blog.html#post1">Understanding Software Design Patterns</a></li>
+            <li><a href="blog.html#post2">The Future of AI in Software Engineering</a></li>
+            <li><a href="blog.html#post3">Cybersecurity Best Practices for Developers</a></li>
+        </ul>
+    </section>
+    
+    <section class="projects">
+        <h2>Featured Projects</h2>
+        <ul>
+            <li><a href="projects.html#project1">Open Source Web Scraper</a></li>
+            <li><a href="projects.html#project2">AI-Powered Code Review Tool</a></li>
+            <li><a href="projects.html#project3">Secure Authentication System</a></li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Software Engineering Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+!<-- Javascript code -->
+document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.getElementById("contactForm");
+    const formMessage = document.getElementById("formMessage");
+
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        formMessage.classList.remove("hidden");
+        formMessage.textContent = "Thank you for reaching out!";
+        contactForm.reset();
+    });
+});
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #0056b3;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #0056b3;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.blog, .projects, .contact {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

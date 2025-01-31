@@ -69,7 +69,7 @@ img {
 }
 
 #wea h2::after {
-    content: url('images/weather_icon.svg');
+    content:url('images/weather_icon.svg');
     display: inline-block;
     margin-left: 10px;
     width: 16px;
@@ -184,7 +184,7 @@ img {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 2rem;
+        margin-left: 0rem;
         align-content: center;
         margin-bottom: 4rem;
         margin-top: 1rem;
