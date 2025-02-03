@@ -16,6 +16,10 @@ h1 {
     align-self: center;
     margin-left: 1rem;
 }
+
+h2 {
+    text-align: center;
+}
 .navigation {
     align-self: center;
 }
