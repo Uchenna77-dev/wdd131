@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Product Review Form</title>
+        <meta name="description" content="This site contains a form to be filled by an individual in other to post a review">
+        <meta name="author" content="Uchenna Onuorah">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&family=Noto+Serif+Georgian:wght@100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/form.css">
+        <script src="scripts/form.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Product Review Form</h1>
+        </header>    
+        <main>
+            <form action="review.html" method="get" id="reviewCount">
+                <label for="productName">Product Name:</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+    
+                <fieldset>
+                    <legend>Overall Rating:</legend>
+                    <div class="rating">
+                        <div class="radio-button">
+                            <label for="star5" title="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+                            <input type="radio" id="star5" name="rating" value="5" required>
+                        </div>
+                        <div class="radio-button">
+                            <label for="star4" title="4 stars">&#9733;&#9733;&#9733;&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4" required>
+                        </div>
+                        <div class="radio-button">    
+                            <label for="star3" title="3 stars">&#9733;&#9733;&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3" required>
+                        </div>
+                        <div class="radio-button">    
+                            <label for="star2" title="2 stars">&#9733;&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2" required>
+                        </div>
+                        <div class="radio-button">    
+                            <label for="star1" title="1 star">&#9733;</label>
+                            <input type="radio" id="star1" name="rating" value="1" required>
+                        </div>    
+                    </div>
+                </fieldset>
+    
+                <label for="installationDate">Date of Installation:</label>
+                <input type="date" id="installationDate" name="installationDate" required>
+    
+                <fieldset class="features">
+                    <legend>Which features did you find useful in the product?
+                    (Check all that apply)
+                    </legend>
+                    <div>
+                        <input type="checkbox" id="Durability" name="Durability" value="Durability">
+                        <label for="Durability">Durability</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="EaseOfUse" name="EaseOfUse" value="EaseOfUse">
+                        <label for="EaseOfUse">Ease of Use</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Performance" name="Performance" value="Performance">
+                        <label for="Performance">Performance</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Design" name="Design" value="Design">
+                        <label for="Design">Design</label>
+                    </div>
+                </fieldset>
+    
+                <label for="writtenReview">Written Review <span class="optional">(Optional)</span></label>
+                <textarea id="writtenReview" name="writtenReview" rows="4" cols="50" placeholder="Write your review here..."></textarea>
+    
+                <label for="userName">Your Name <span class="optional">(Optional)</span></label>
+                <input type="text" id="userName" name="userName">
+    
+                <input type="submit" value="Post Review">
+            </form>
+        </main>
+        <footer>
+            <p></p>
+            <p></p>
+        </footer>
+    </body>
+    </html>

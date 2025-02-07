@@ -1,0 +1,155 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 700px;
+    width: 100%;
+}
+
+header {
+    background-color: rgb(57, 1, 57);
+    color: #fff;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    height: 5rem;
+    border-radius: 5px;
+    margin: 5px 0px 15px 0px;
+}
+
+main {
+    background-color: #d8d7d7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #efeded;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+input[value="Post Review"] {
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.radio-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.rating label {
+    font-size: 1em;
+    color: #0e0000;
+    cursor: pointer;
+}
+
+.rating input[type = "radio"] {
+    background-color: #efeded;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #ffcc00;
+}
+
+
+fieldset {
+    margin-top: 10px;
+    border: none;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.optional {
+    color: rgb(3, 3, 129);
+    font-style: italic;
+}
+
+footer {
+    background-color: rgb(57, 1, 57);
+    color: #fff;
+    justify-items: center;
+    align-content: center;
+    width: 100%;
+    height: 5rem;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    label, input[type="submit"] {
+        font-size: 1em;
+    }
+}
