@@ -44,5 +44,5 @@ function updateReviewCount() {
     document.getElementById('reviewCount').textContent = count;
   }
 
-  
-  document.addEventListener('DOMContentLoaded', updateReviewCount);
+  // To view the count in local storage, uncomment the document.addEventListener.
+  // document.addEventListener('DOMContentLoaded', updateReviewCount);
