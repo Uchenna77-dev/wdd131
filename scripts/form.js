@@ -45,7 +45,7 @@ function updateReviewCount() {
   }
 
   // To view the count in local storage, uncomment the document.addEventListener.
-  // document.addEventListener('DOMContentLoaded', updateReviewCount);
+  document.addEventListener('DOMContentLoaded', updateReviewCount);
 
   if (typeof localStorage !== 'undefined') {
     localStorage.setItem('key', 'value');
